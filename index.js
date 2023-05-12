@@ -42,11 +42,11 @@ roleTyper()
     tooltips: true,
   });
 
-  document.getElementById("resume-button-1").onclick=()=>{
+  document.getElementById("resume-link-1").onclick=()=>{
 window.open("https://drive.google.com/file/d/1ibbT6SdnhUPlOiN5UQebQFWzAlu10do7/view?usp=share_link");
   }
 
-  document.getElementById("resume-button-2").onclick=()=>{
+  document.getElementById("resume-link-2").onclick=()=>{
     window.open("https://drive.google.com/file/d/1ibbT6SdnhUPlOiN5UQebQFWzAlu10do7/view?usp=share_link");
   }
 
