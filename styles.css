@@ -8,6 +8,10 @@ body{
     
     box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color:white;
+}
 
 #width {
   margin: 7% 7% 0 7%;
@@ -26,7 +30,9 @@ body{
 }
 #resume-button-1 ,#resume-button-2{
   border-radius: 7px;
+  padding: 6px 11px;
   border: 2px solid #be3144;
+  background-color: #be3144
 }
 /* .nav-colored {
   background-color: #be3144;
