@@ -100,9 +100,9 @@ align-items: center;
   line-height: 40px;
 }
 
-#skills{
+/* #skills{
   height: 100vh;
-}
+} */
 
 
 hr{
@@ -151,9 +151,9 @@ hr{
   /* height:60vh; */
   font-size: larger;
   display: block;
-  margin: 10% auto;
+  margin: 5% auto;
  text-align: center;
- margin-bottom: 16%;
+ margin-bottom: 10%;
 }
 
 #aboutflex{
@@ -212,11 +212,13 @@ gap: 4%;
   background-color: #929595;
   padding: 6%;
   border-radius: 8px;
+  height: fit-content;
+  /* max-height: 600px; */
 }
 
 .project-card>img{
   width: 100%;
-  height: 40%;
+  height: 200px;
 }
 
 /* .project-card *:hover{
@@ -498,6 +500,11 @@ footer {
   flex-direction: column;
   text-align: center;
 }
+#projects{
+  margin: 80px 4%;
+  margin-bottom: 200px;
+}
+
 }
 
 
