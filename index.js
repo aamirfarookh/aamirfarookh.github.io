@@ -1,66 +1,78 @@
-
-
-function roleTyper() {
-    if(i < txt.length){
-      document.getElementById("demo1").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(roleTyper, speed);
-    }
-    else {
-     
-      i = 0;
-      // clear the text
-      document.getElementById("demo1").innerHTML = "";
-      // make the recursive call
-    
-      setTimeout(roleTyper, speed);
-    }
-  }
-
-  let i=0;
-let txt="A  NodeJS  Backend  Developer.";
-let speed=100;
-roleTyper()
-
-  
-  var myNav = document.getElementById('nav-menu');
-  var myNav2 = document.getElementById('main');
-  window.onscroll = function () { 
-      if ( document.documentElement.scrollTop >= 15 ) {
-          myNav.classList.add("nav-colored");
-          myNav2.classList.add("nav-colored");
-      } 
-      else {
-          myNav.classList.remove("nav-colored");
-          myNav2.classList.remove("nav-colored");
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if(this.scrollY > 20){
+          $('#main-nav').addClass("sticky");
+      }else{
+          $('#main-nav').removeClass("sticky");
       }
-  };
+      
+  })
 
-  GitHubCalendar(".calendar", "aamirfarookh", {
-    responsive: true,
-    global_stats: false,
-    tooltips: true,
+  // togel/menu nevbar script
+  $('.menu-btn').click(function(){
+      $('#main-nav .menu').toggleClass("active");
+      $('.menu-btn i').toggleClass("active");
   });
 
-  document.getElementById("resume-button-1").onclick=()=>{
-window.open("https://drive.google.com/file/d/1ibbT6SdnhUPlOiN5UQebQFWzAlu10do7/view?usp=share_link");
-  }
 
-  document.getElementById("resume-button-2").onclick=()=>{
-    window.open("https://drive.google.com/file/d/1ibbT6SdnhUPlOiN5UQebQFWzAlu10do7/view?usp=share_link");
-  }
+  $('.menu li a').click(function(){
+      $('#main-nav .menu').toggleClass("active");
+      $('.menu-btn i').toggleClass("active");
+  });
 
-  document.getElementById("resume-button-3").onclick=()=>{
-    window.open("https://drive.google.com/file/d/1ibbT6SdnhUPlOiN5UQebQFWzAlu10do7/view?usp=share_link");
-  }
-     
-  
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.display = "none";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.display= "block";
-  }
+  //   typing animation script 
+     var typed = new Typed (".panku",{
+      strings:["Full-Stack Web-Developer", "Node-js Backend Devloper"],
+      typeSpeed:100,
+      backSpeed:60,
+      loop:true
+     })
+
+
+     var typed = new Typed (".panku2",{
+      strings:["Full-Stack Web-Developer", "Node-js Backend Devloper"],
+      typeSpeed:100,
+      backSpeed:60,
+      loop:true
+     });
+
+  // owl carousel script
+  $('.carousel').owlCarousel({
+       margin:20,
+       loop:true,
+       autoplayTimeOut:2000,
+       autoplayHoverPause:true,
+       responsive:{
+          0:{
+              items:1,
+              nav:false
+          },
+          600:{
+              items:1,
+              nav:false
+          },
+          1000:{
+              items:1,
+              nav:false
+          }
+       }
+  })
+
+
+
+
+});
+
+// resume section 
+
+document.getElementById("resume-link-1").onclick = () => {
+  window.open(
+    "https://drive.google.com/file/d/1fDNiQqKwojAv4_J0HQ4wh_eUNNWvIZFH/view?usp=sharing"
+  );
+};
+
+document.getElementById("resume-link-2").onclick = () => {
+  window.open(
+    "https://drive.google.com/file/d/1fDNiQqKwojAv4_J0HQ4wh_eUNNWvIZFH/view?usp=sharing"
+  );
+};
