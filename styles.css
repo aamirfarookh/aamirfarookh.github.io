@@ -231,7 +231,7 @@ section .title::after{
     height: 480px;
     width:  400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 6px;    
 }
 .about .about-content .right{
     width: 60%;
