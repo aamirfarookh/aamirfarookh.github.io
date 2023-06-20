@@ -70,6 +70,9 @@ html{
     font-weight: 500px;
     margin-left: 25px;
   transition: color 0.3s;
+  background-color: #59bd99;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #resume-button-{
@@ -90,7 +93,7 @@ html{
 }
 
 #main-nav .menu li a:hover{
-      color: #59bd99;
+      color: grey;
 
 }
 #main-nav.sticky .menu li a:hover{
