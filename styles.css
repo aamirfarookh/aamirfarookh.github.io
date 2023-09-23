@@ -180,6 +180,9 @@ section{
    justify-content: space-between;
   
 }
+.home-img{
+   border-radius: 50%;
+}
 section .title {
 
     position: relative;
